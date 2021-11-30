@@ -1,9 +1,8 @@
 #!/bin/bash
 
 sudo apt-get update
-#sudo apt-get install -y python2.7 python-pip
-curl https://bootstrap.pypa.io/get-pip.py | sudo -H python3.6
-pip3 install -r requirements.txt
-pip install Flask
-pip install gunicorn
-pip install jinja2
+sudo wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u141-b15/336fa29ff2bb4ef291e347e091f7f4a7/jdk-8u141-linux-x64.rpm
+sudo snap install --classic kotlin
+sudo apt install openjdk-8-jdk
+sudo apt install apache2
+
