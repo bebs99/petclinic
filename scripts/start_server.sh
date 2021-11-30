@@ -1,5 +1,7 @@
 #!/bin/bash
 
-cd /home/ubuntu
-export FLASK_APP=run.py
-flask run --host=0.0.0.0 --port 8080 >/dev/null 2>&1 &
+cd petclinic/src/main/kotlin/org/springframework/samples/petclinic/
+
+kotlinc PetClinicApplication.kt -d PetClinicApplication.jar
+
+java -jar PetClinicApplication.jar
